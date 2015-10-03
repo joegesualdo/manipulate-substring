@@ -25,4 +25,5 @@ ManipulateSubstring.colorize("blue", "really", "His house was really nice")
 ```javascript
 ManipulateSubstring.colorize("blue", "really", "His house was really nice")
 ```
-
+## License
+MIT © Joe Gesualdo
