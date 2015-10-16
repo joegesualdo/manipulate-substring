@@ -37,5 +37,17 @@ ManipulateSubstring.colorize("blue", "really", "His house was really nice")
 console.log(ManipulateSubstring.colorizeAtIndex("blue", 1, "Hi Joe! How are you"))
 ```
 
+### `colorizeBetweenCharacterIndexes(color, startIndex, endIndex, string)`
+| Name | Type | Description |
+|------|------|-------------|
+| colorize | `String` | string that represents a color 
+| startIndex | `Number` | Index where you want to start the coloring
+| endIndex | `Number` | Index where you want to stop the coloring
+| string| `String` | parent string 
+
+```javascript
+console.log(ManipulateSubstring.colorizeBetweenCharacterIndexes("blue", 2, 5, "Thisss is kinda crazy I guess"))
+```
+
 ## License
 MIT © Joe Gesualdo

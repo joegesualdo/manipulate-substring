@@ -33,5 +33,19 @@ ManipulateSubstring.colorizeAtWordIndex = function(color, index, sentence){
   var newString = arr.join(" ")
   return newString
 }
+ManipulateSubstring.colorizeBetweenCharacterIndexes = function(color, startIndex, endIndex, sentence){
+  // stringToColor= stringToColor.toLowerCase()
+  var arr = sentence.split("")
+
+  // var lowerCaseArray = arrayToLowerCase(arr)
+  // var stringIndex = lowerCaseArray.indexOf(stringToColor)
+
+  for(var i = startIndex; i < endIndex; i++){
+    arr[i] = chalk[color](arr[i])
+  }
+
+  var newString = arr.join("")
+  return newString
+}
 
 module.exports = ManipulateSubstring
