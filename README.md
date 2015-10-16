@@ -25,5 +25,17 @@ ManipulateSubstring.colorize("blue", "really", "His house was really nice")
 ```javascript
 ManipulateSubstring.colorize("blue", "really", "His house was really nice")
 ```
+
+### `colorizeAtWordIndex(color, index, string)`
+| Name | Type | Description |
+|------|------|-------------|
+| colorize | `String` | string that represents a color 
+| index | `Number` | Index of word you want to color
+| string| `String` | parent string 
+
+```javascript
+console.log(ManipulateSubstring.colorizeAtIndex("blue", 1, "Hi Joe! How are you"))
+```
+
 ## License
 MIT © Joe Gesualdo

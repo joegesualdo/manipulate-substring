@@ -21,4 +21,17 @@ ManipulateSubstring.colorize = function(color, stringToColor, sentence){
   return newString
 }
 
+ManipulateSubstring.colorizeAtWordIndex = function(color, index, sentence){
+  // stringToColor= stringToColor.toLowerCase()
+  var arr = sentence.split(" ")
+
+  // var lowerCaseArray = arrayToLowerCase(arr)
+  // var stringIndex = lowerCaseArray.indexOf(stringToColor)
+
+  arr[index] = chalk[color](arr[index])
+
+  var newString = arr.join(" ")
+  return newString
+}
+
 module.exports = ManipulateSubstring
